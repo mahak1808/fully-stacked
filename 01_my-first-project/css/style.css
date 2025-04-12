@@ -1,0 +1,233 @@
+/*
+#4676A9 - blue
+#CB731C - orange
+#22466C - dark blue
+#FFFFFF - white 
+*/
+
+
+/* 
+.(class-name) -> for CSS in a class
+#(id-name) -> for CSS in an id
+
+Classes are reusable while ID's aren't.
+ID's can only be used once on a page.
+
+GENERALLY, ID selectors are avoided and ONLY class and element selectors are used.
+
+
+DIV vs SPAN
+Span is a meaningless box, which we can put things in, BUT it can be used to make inline-changes in the HTML file. When we need to add a style to just SOMEthing in the middle of a text, JUST like <strong>, <em>, etc.
+Whereas a DIV is a block level element and gets stacked.
+
+
+PSEUDO CLASS vs PSEUDO ELEMENT
+Pseudo class has : and pseudo element has :: 
+Element is something that's always there and we haven't explicitly written the HTML for it.
+Whereas for pseudo classes, it changes in certain situations, eg, when we hover over a link.
+
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #1B281B;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    padding-inline: 50px;
+}
+
+p {
+    margin-block: 25px;
+    text-align: justify;
+    /* background-color: pink;
+    block-size: 50px; for height */
+    /* padding-block: 50px;for height */
+    /* padding-inline: 50px; for width */
+    /* border-width: 10px;
+    border-color: pink;
+    border-style: solid;
+    padding: 80px;
+    background-color: lightblue;
+    border: black 10px solid;
+    border-block-end-width: 30px;
+    border-block-end-color: #CB731C; */
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 7.5rem;
+    /* color: #4676A9 ; */
+    color: rgb(105, 105, 105);
+    text-align: center;
+    line-height: 1.2;
+
+    @media (width < 720px) {
+        font-size: 4.5rem;
+    }
+}
+
+h2 {
+    color: #CB731C;
+    font-size: 2rem;
+    /* background-color: paleturquoise;
+    inline-size: 350px; for width */
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: red;
+}
+
+/* Pseudo-class */
+/* a:visited {
+    color: blue;
+} */
+
+a:hover,
+a:focus-visible {
+    color: palevioletred;
+}
+
+/* a:active {
+    color: black;
+} */
+
+img {
+    display: block; /*This is to remove the empty space below an img, bec it thinks you might wanna place some text with the img, since it's an inline element.*/
+    max-inline-size: 100%;
+}
+
+ul {
+    /* list-style: circle; */
+    color: green;
+    /* list-style-position: outside; DEFAULT VALUE */
+}
+
+li {
+    /* border: 5px solid blue; */
+    margin-block: 10px;
+}
+
+ul li::marker {
+    /* color: red; */
+    content: '🎀 ';
+} 
+
+section {
+    margin-block: 75px;
+}
+
+header {
+    /* border: 5px dotted red; */
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+}
+
+/* header img {
+    border: 5px green solid;
+} */
+
+/* .primary-navigation {
+    border: 5px purple dashed;
+} */
+
+.primary-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.primary-navigation a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.primary-navigation a:hover,
+.primary-navigation a:focus-visible {
+    color: #087A98;
+}
+
+.wrapper {
+    max-inline-size: 1000px;
+    margin-inline: auto;
+    /* border: 5px dashed red; */
+}
+
+.two-column-layout {
+    display: grid;
+    gap: 50px;
+    margin-block-end: 50px;
+
+    @media (width > 720px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+.teal-bg {
+    background-color: #087A98;
+    color: white;
+    border: #0b4a5a solid 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Descendant selectors */
+.teal-bg strong {
+    color: yellow;
+}
+
+.teal-text {
+    color: #087A98;
+}
+
+.climber-bg {
+    background-image: url("../images/simple-steps.jpg");
+    color: white;
+    padding: 24px;
+    border: #0b4a5a solid 10px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* p{
+    margin-block: 30px;
+    margin-inline: 100px;
+    border: 20px solid yellow;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    inline-size: 400px;
+} */
+
+/* footer {
+    background-color: #22466C;
+    color: #ffffff;
+    /* block-size: 100px; Only adds space to bottom */
+    /* padding: .1rem; or px */
+    /* border-style: solid;
+    border-width: 5px;
+    border-color: #6E84CF;
+} */
+
+footer p {
+    text-align: center;
+}

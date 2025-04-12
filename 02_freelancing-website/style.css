@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1 {
+    margin-block: 10px;
+}
+
+h2 {
+    margin-block: 10px;
+}
+
+h3 {
+    margin-block: 10px;
+}
+/* HERO SECTION */
+
+.hero-section {
+    background-image: url(images/hero-gradient.png);
+    padding: 20px;
+    padding-inline: 80px;
+}
+
+h1 {
+    color: #F8F8F8;
+}
+
+header h2 {
+    color: #C0B6AF;
+}
+
+header button {
+    background-color: #3F1D2B;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: #3F1D2B;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: #E57373;
+    color: #000000;
+}
+
+nav a,ul {
+    text-decoration: none;
+    color: #F8F8F8;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav a:hover,
+a:focus-visible {
+    color: #e0abab;
+}
+
+.navbar-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navbar-area p {
+    color: #F8F8F8;
+    padding: 0;
+    margin: 0;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+    background-color: #1A1A1A;
+    padding: 20px;
+    padding-inline: 80px;
+}
+
+.about-section h2 {
+    color: #F8F8F8;
+}
+
+.about-section p {
+    color: #C0B6AF;
+    text-align: justify;
+
+}
+
+/* SERVICES SECTION */
+
+.services-section {
+    background-color: #3A1C1C;
+    padding: 20px;
+    padding-inline: 80px;
+}
+
+.services-section h2 {
+    color: #F8F8F8;
+}
+
+.services-section ul {
+    color: #C0B6AF;
+    list-style: disc;
+    flex-direction: column;
+    padding: 0 0 20px 20px;
+}
+
+.services-section button {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: #1A1A1A;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.services-section button:hover {
+    background-color: #C0B6AF;
+    color: #1A1A1A;
+}
+
+/* PORTFOLIO */
+
+.portfolio-section {
+    background-color: #0f0f0f;
+    padding: 20px;
+    padding-inline: 80px;
+}
+
+.portfolio-section h2 {
+    color: #F8F8F8;
+}
+
+/* CONTACT INFO */
+
+.contact-section {
+    background-color: #3F1D2B;
+    padding: 20px;
+    padding-inline: 80px;
+}
+
+.contact-section h2 {
+    color: #F8F8F8;
+}
+
+.contact-section h3 {
+    color: #C0B6AF;
+}
+
+.contact-section ul {
+    list-style: none;
+    color: #FFFFFF;
+    flex-direction: column;
+}
+
+/* FOOTER AREA */
+
+footer {
+    background-color: #080808;
+    padding: 20px;
+    text-align: center;
+    padding-inline: 80px;
+}
+
+footer p {
+    color: #F8F8F8;
+}

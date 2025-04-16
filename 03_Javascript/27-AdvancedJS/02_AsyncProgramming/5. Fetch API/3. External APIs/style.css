@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* width: 100vw; */
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    background-color: cornsilk;
+}
+
+.btn{
+    padding: 10px 20px;
+
+}
+
+.all-posts{
+    padding: 20px;
+    background-color: aquamarine;
+}

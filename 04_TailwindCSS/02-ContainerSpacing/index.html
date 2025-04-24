@@ -1,0 +1,65 @@
+<!-- 
+https://tailwindcss.com/docs/margin 
+https://tailwindcss.com/docs/padding
+https://tailwindcss.com/docs/margin#adding-space-between-children
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Spacing</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body{
+            padding: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <h3>1. Margin</h3>
+    <div class="m-4 bg-yellow-100">Margin All Around</div>
+    <div class="mx-4 bg-pink-100">Margin from X axis</div>
+    <div class="my-4 bg-blue-100">Margin from Y axis</div>
+    <div class="mt-6 bg-red-100">Margin Top</div>
+    <div class="mb-4 bg-green-100">Margin Bottom</div>
+    <div class="ml-5 bg-purple-100">Margin Left</div>
+    <div class="mr-6 bg-gray-100">Margin Right</div>
+
+    <br><hr><br>
+
+    <!-- For when you wanna put any amount of margin  -->
+    <div class="m-[100px] bg-slate-300">2. Arbitrary Spacing (Margin All Around)</div>
+
+    <br><hr><br>
+
+    <h3>3. Padding</h3>
+    <div class="p-4 bg-lime-100">Padding All Around</div>
+    <div class="px-4 bg-lime-200">Padding from X axis</div>
+    <div class="py-4 bg-lime-300">Padding from Y axis</div>
+    <div class="pt-6 bg-lime-400">Padding Top</div>
+    <div class="pb-4 bg-lime-500">Padding Bottom</div>
+    <div class="pl-5 bg-lime-600">Padding Left</div>
+    <div class="pr-6 bg-lime-700">Padding Right</div>
+
+    <br><hr><br>
+
+    <!-- To control the space between elements -->
+    <h3>4. Space Between X</h3>
+    <div class="flex space-x-4">
+        <div class="p-3 bg-teal-100">01</div>
+        <div class="p-3 bg-teal-200">02</div>
+        <div class="p-3 bg-teal-300">03</div>
+    </div>
+
+    <br><hr><br>
+
+    <h3>5. Space Between Y</h3>
+    <div class="flex-column space-y-4">
+        <div class="p-3 bg-teal-100">01</div>
+        <div class="p-3 bg-teal-200">02</div>
+        <div class="p-3 bg-teal-300">03</div>
+    </div>
+</body>
+</html>

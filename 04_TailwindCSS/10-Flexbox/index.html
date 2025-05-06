@@ -1,0 +1,68 @@
+<!-- 
+https://tailwindcss.com/docs/flex
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position and Display</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="border m-10">
+        <ul class="flex">
+            <li class="bg-teal-100 m-5 p-5">01</li>
+            <li class="bg-teal-100 m-5 p-5">02</li>
+            <li class="bg-teal-100 m-5 p-5">03</li>
+            <li class="bg-teal-100 m-5 p-5">04</li>
+            <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+    </div>
+
+    <!-- FLEX DIRECTION -->
+    <div class="border m-10">
+        <ul class="flex flex-col">
+            <li class="bg-teal-100 m-5 p-5">01</li>
+            <li class="bg-teal-100 m-5 p-5">02</li>
+            <li class="bg-teal-100 m-5 p-5">03</li>
+            <li class="bg-teal-100 m-5 p-5">04</li>
+            <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+    </div>
+
+    <!-- JUSTIFY CONTENT -->
+    <div class="border m-10">
+        <ul class="flex justify-between">
+            <li class="bg-teal-100 m-5 p-5">01</li>
+            <li class="bg-teal-100 m-5 p-5">02</li>
+            <li class="bg-teal-100 m-5 p-5">03</li>
+            <li class="bg-teal-100 m-5 p-5">04</li>
+            <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+    </div>
+
+    <!-- ORDER -->
+    <div class="border m-10">
+        <ul class="flex ">
+            <li class="bg-teal-100 m-5 p-5 order-5">01</li>
+            <li class="bg-teal-100 m-5 p-5">02</li>
+            <li class="bg-teal-100 m-5 p-5 order-4">03</li>
+            <li class="bg-teal-100 m-5 p-5">04</li>
+            <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+    </div>
+
+    <!-- SHRINK/GROW -->
+    <div class="border m-10">
+        <ul class="flex ">
+            <li class="p-5 m-3 w-64 bg-teal-100 flex-none">01</li>
+            <li class="p-5 m-3 w-64 bg-teal-100 flex-initial">02</li> <!-- Shrink BUT NOT grow-->
+            <li class="p-5 m-3 w-64 bg-teal-100 flex-auto">03</li>
+            <li class="p-5 m-3 w-64 bg-teal-100 flex-1">04</li>
+            <li class="p-5 m-3 w-64 bg-teal-100">05</li>
+        </ul>
+    </div>
+
+</body>
+</html>

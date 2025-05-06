@@ -1,0 +1,37 @@
+<!-- 
+https://tailwindcss.com/docs/background-image
+https://tailwindcss.com/docs/filter-drop-shadow
+https://tailwindcss.com/docs/text-shadow
+https://tailwindcss.com/docs/box-shadow
+https://tailwindcss.com/docs/background-image#adding-a-linear-gradient
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position and Display</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body">
+   <!-- <div class="h-screen w-full bg-blue-200 bg-cover bg-no-repeat bg-center" style="background-image: url('https://images.unsplash.com/photo-1665686304129-a6e2d16923e8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div> -->
+    
+   <!-- Shadows -->
+    <div class="flex flex-wrap">
+        <div class="w-[400px] mt-10 ml-4 p-3 shadow-md">Shadow Medium</div>
+        <div class="w-[400px] mt-10 ml-4 p-3 shadow-lg">Shadow Large</div>
+        <div class="w-[400px] mt-10 ml-4 p-3 shadow-xl">Shadow XL</div>
+        <div class="w-[400px] mt-10 ml-4 p-3 shadow-2xl">Shadow 2XL</div>
+    </div>
+
+    <div class="w-[400px] mt-10 ml-4 p-3 shadow-inner">Inner Shadow</div>
+
+    <div class="w-[400px] mt-10 ml-4 p-3 shadow-lg shadow-red-300/70">Shadow Color</div> <!-- Shadow-color-shade/opacity-->
+
+    <div class="h-40 bg-gradient-to-r from-teal-100 to-green-500 m-10 text-center p-40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam porro repellat omnis asperiores neque accusamus consequuntur nihil suscipit laudantium non.</div>
+
+    <div class="h-40 bg-gradient-to-r from-cyan-500 via-blue-500 to-teal-500 mt-10 text-center p-40">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam quasi illum pariatur ratione voluptatum harum quo aliquid aperiam quae atque?</div>
+
+
+</body>
+</html>

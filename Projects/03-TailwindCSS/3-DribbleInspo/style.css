@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent-orange: #fe482b;
+  --color-baby-blue: #e2f8fe;
+  --color-light-gray: #f6f6f6;
+  --color-dark-gray: #2b2f36;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 20px));
+  }
+}
+
+.logo-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.vids {
+  background: linear-gradient(
+    to right,
+    #2b2f36 0%,
+    #2b2f36 48%,
+    #fe482b 48%,
+    #fe482b 100%
+  );
+}
+
+.custom-bullet li {
+  @apply relative pl-8 list-none;
+}
+
+.custom-bullet li::before {
+  content: "";
+  @apply absolute left-0 top-1 w-5 h-5;
+  background-image: url("images/star.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-text {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
+}
